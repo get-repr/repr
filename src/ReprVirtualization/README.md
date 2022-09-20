@@ -1,0 +1,3 @@
+# ReprVirtualization
+
+The driver component for virtualizing resources requested by remote work processes. In the current incarnation this is just a minifilter to redirect file IO to the staging directory (which is in turn virtualized by ProjFS). In the future, this driver may handle the callbacks to the service implementation to populate the file contents (removeing ProjFS). Additionally, we may augment this driver to virtualize calls to the registry as well.
